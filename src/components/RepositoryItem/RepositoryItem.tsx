@@ -2,7 +2,16 @@ import { FaGithub } from "react-icons/fa"
 
 import './styles.scss'
 
-export function RepositoryItem(props) {
+interface RepositoryItemProps {
+  repository: {
+    description: string
+    id: number
+    html_url: string
+    name: string
+  }
+}
+
+export function RepositoryItem(props: RepositoryItemProps) {
   return (
     <li>
       <div>

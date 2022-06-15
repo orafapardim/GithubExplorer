@@ -1,5 +1,3 @@
-import { React } from 'react-dom';
-
 import './styles.scss'
 
 export function Header() {

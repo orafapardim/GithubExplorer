@@ -4,8 +4,15 @@ import { RepositoryItem } from "../RepositoryItem/RepositoryItem"
 
 import './styles.scss'
 
+interface Repository {
+  description: string
+  id: number
+  html_url: string
+  name: string
+}
+
 export function RepositoryList() {
-  const [repositories, setRepositories] = useState([])
+  const [repositories, setRepositories] = useState<Repository[]>([])
 
   useEffect(() => {
     fetch(`https://api.github.com/users/orafapardim/repos`)
