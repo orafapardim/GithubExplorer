@@ -1,42 +1,43 @@
 li {
   align-items: flex-start;
-  background: #57b9e681;
+  background: var(--bg-card);
   border-radius: .5rem;
   display: flex;
   flex-direction: column;
   gap: .25rem;
   justify-content: space-between;
-  padding: .5rem;
+  padding: 1rem;
 
   div {
     align-items: center;
     display: flex;
     gap: .5rem;
-    padding: .25rem 0;
+    padding: .5rem 0;
 
     svg {
-      border-radius: 30px;
-      height: 30px;
-      width: 30px;
+      border-radius: 2rem;
+      height: 2rem;
+      width: 2rem;
     }
   }
 
   p {
-    color: #444;
+    color: var(--text);
     font-size: 1rem;
     margin-top: .125rem;
   }
 
   a {
-    color: #3bafe6;
+    color: var(--text);
     font-weight: bold;
     display: inline-block;
     margin-top: .25rem;
+    margin-left: auto;
     text-decoration: none;
     transition: filter .2s;
 
     &:hover {
-      filter: brightness(.8);
+      filter: brightness(0);
     }
   }
 }
