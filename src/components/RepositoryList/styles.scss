@@ -1,10 +1,10 @@
-section.repository-list {
+.repository-list {
   max-width: 1440px;
   margin: 0 auto;
   padding: 1rem;
 
   h2 {
-    color: #3bafe6;
+    color: var(--blue);
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -20,11 +20,11 @@ section.repository-list {
   }
 }
 
-@media (min-width: 768px) {
-  section.repository-list {
+@media (min-width: 780px) {
+  .repository-list {
     ul {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
   }
 }
